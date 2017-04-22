@@ -61,10 +61,15 @@ inoremap <PageUp> <Nop>
 inoremap <PageDown> <Nop> 
 set relativenumber
 let R_assign = 0
-set shiftwidth=2
 set nrformats=
 vmap <Space> <Plug>RDSendSelection
 nmap <Space> <Plug>RDSendLine
 let R_term = "mate-terminal"
 nnoremap <silent><A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 nnoremap <silent><A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
+" Tab specific option
+set tabstop=8                   "A tab is 8 spaces
+set expandtab                   "Always uses spaces instead of tabs
+set softtabstop=4               "Insert 4 spaces when tab is pressed
+set shiftwidth=4                "An indent is 4 spaces
+set shiftround                  "Round indent to nearest shiftwidth multiple
