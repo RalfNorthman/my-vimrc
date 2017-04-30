@@ -59,7 +59,7 @@ inoremap <Right> <Nop>
 inoremap <Del> <Nop>
 inoremap <PageUp> <Nop>
 inoremap <PageDown> <Nop> 
-set relativenumber
+set number
 let R_assign = 0
 set nrformats=
 vmap <Space> <Plug>RDSendSelection
