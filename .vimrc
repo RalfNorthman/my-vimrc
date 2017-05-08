@@ -13,7 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'jalvesaq/Nvim-R'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
-
+Plugin 'elixir-lang/vim-elixir'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
