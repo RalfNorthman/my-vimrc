@@ -48,17 +48,11 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line 
 
 set background=dark
+colorscheme pablo
 syntax enable
 filetype plugin on
 set path+=**
 set wildmenu
-inoremap <Up> <Nop>
-inoremap <Down> <Nop> 
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
-inoremap <Del> <Nop>
-inoremap <PageUp> <Nop>
-inoremap <PageDown> <Nop> 
 set number
 let R_assign = 0
 set nrformats=
@@ -67,6 +61,9 @@ nmap <Space> <Plug>RDSendLine
 let R_term = "mate-terminal"
 nnoremap <silent><A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 nnoremap <silent><A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
+inoremap { {}<Left>
+inoremap [ []<Left>
+inoremap ( ()<Left>
 " Tab specific option
 set tabstop=8                   "A tab is 8 spaces
 set expandtab                   "Always uses spaces instead of tabs
