@@ -51,6 +51,7 @@ set background=dark
 colorscheme pablo
 syntax enable
 filetype plugin on
+let g:sql_type_default = 'mysql'
 set path+=**
 set wildmenu
 set number
