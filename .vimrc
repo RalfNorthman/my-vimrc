@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'jalvesaq/Nvim-R'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-fugitive'
 
 
 " The following are examples of different formats supported.
@@ -59,7 +60,8 @@ inoremap <Right> <Nop>
 inoremap <Del> <Nop>
 inoremap <PageUp> <Nop>
 inoremap <PageDown> <Nop> 
-set relativenumber
+" set relativenumber
+set number
 let R_assign = 0
 set shiftwidth=2
 set nrformats=
