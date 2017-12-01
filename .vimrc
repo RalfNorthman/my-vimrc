@@ -14,7 +14,7 @@ Plugin 'jalvesaq/Nvim-R'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-fugitive'
-
+Plugin 'elixir-lang/vim-elixir'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -49,10 +49,13 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line 
 
 set background=dark
+colorscheme pablo
 syntax enable
 filetype plugin on
+let g:sql_type_default = 'mysql'
 set path+=**
 set wildmenu
+<<<<<<< HEAD
 inoremap <Up> <Nop>
 inoremap <Down> <Nop> 
 inoremap <Left> <Nop>
@@ -61,12 +64,22 @@ inoremap <Del> <Nop>
 inoremap <PageUp> <Nop>
 inoremap <PageDown> <Nop> 
 " set relativenumber
+=======
+>>>>>>> b026ef4b034f433d00212d6e5ebaa4dd7300d390
 set number
 let R_assign = 0
-set shiftwidth=2
 set nrformats=
 vmap <Space> <Plug>RDSendSelection
 nmap <Space> <Plug>RDSendLine
 let R_term = "mate-terminal"
 nnoremap <silent><A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 nnoremap <silent><A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
+inoremap { {}<Left>
+inoremap [ []<Left>
+inoremap ( ()<Left>
+" Tab specific option
+set tabstop=8                   "A tab is 8 spaces
+set expandtab                   "Always uses spaces instead of tabs
+set softtabstop=2               "Insert 4 spaces when tab is pressed
+set shiftwidth=2                "An indent is 4 spaces
+set shiftround                  "Round indent to nearest shiftwidth multiple
