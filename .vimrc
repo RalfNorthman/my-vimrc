@@ -55,7 +55,6 @@ filetype plugin on
 let g:sql_type_default = 'mysql'
 set path+=**
 set wildmenu
-<<<<<<< HEAD
 inoremap <Up> <Nop>
 inoremap <Down> <Nop> 
 inoremap <Left> <Nop>
@@ -64,8 +63,6 @@ inoremap <Del> <Nop>
 inoremap <PageUp> <Nop>
 inoremap <PageDown> <Nop> 
 " set relativenumber
-=======
->>>>>>> b026ef4b034f433d00212d6e5ebaa4dd7300d390
 set number
 let R_assign = 0
 set nrformats=
