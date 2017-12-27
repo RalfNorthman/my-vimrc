@@ -15,6 +15,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-fugitive'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'slashmili/alchemist.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
