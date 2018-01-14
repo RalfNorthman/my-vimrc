@@ -16,6 +16,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-fugitive'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'slashmili/alchemist.vim'
+Plugin 'dracula/vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -50,7 +51,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line 
 
 set background=dark
-colorscheme pablo
+colorscheme dracula " Used pablo before
 syntax enable
 filetype plugin on
 let g:sql_type_default = 'mysql'
