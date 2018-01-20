@@ -17,6 +17,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'slashmili/alchemist.vim'
 Plugin 'dracula/vim'
+Plugin 'ElmCast/elm-vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
