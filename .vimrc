@@ -53,6 +53,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line 
 
 set background=dark
+let g:dracula_colorterm=0
 colorscheme dracula " Used pablo before
 syntax enable
 filetype plugin on
