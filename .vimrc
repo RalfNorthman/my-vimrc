@@ -19,6 +19,7 @@ Plugin 'slashmili/alchemist.vim'
 Plugin 'dracula/vim'
 Plugin 'ElmCast/elm-vim'
 Plugin 'mhinz/vim-mix-format'
+Plugin 'racer-rust/vim-racer'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
