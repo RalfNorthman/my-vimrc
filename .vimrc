@@ -19,6 +19,9 @@ Plugin 'slashmili/alchemist.vim'
 Plugin 'dracula/vim'
 Plugin 'ElmCast/elm-vim'
 Plugin 'mhinz/vim-mix-format'
+Plugin 'w0rp/ale'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/tsuquyomi'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
