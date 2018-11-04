@@ -80,9 +80,6 @@ nmap <Space> <Plug>RDSendLine
 let R_term = "mate-terminal"
 nnoremap <silent><A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 nnoremap <silent><A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
-inoremap { {}<Left>
-inoremap [ []<Left>
-inoremap ( ()<Left>
 " Tab specific option
 set tabstop=8                   "A tab is 8 spaces
 set expandtab                   "Always uses spaces instead of tabs
@@ -90,4 +87,5 @@ set softtabstop=2               "Insert 2 spaces when tab is pressed
 set shiftwidth=2                "An indent is 2 spaces
 set shiftround                  "Round indent to nearest shiftwidth multiple
 let g:mix_format_on_save = 1    "Format Elixir code on write.
+let g:rustfmt_autosave = 1      "Format Rust code on write.
 set guicursor=
