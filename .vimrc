@@ -92,3 +92,9 @@ set shiftround                  "Round indent to nearest shiftwidth multiple
 let g:mix_format_on_save = 1    "Format Elixir code on write.
 let g:rustfmt_autosave = 1      "Format Rust code on write.
 set guicursor=
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
