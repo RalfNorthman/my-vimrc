@@ -105,3 +105,4 @@ nnoremap <A-l> <C-w>l
 set splitbelow
 set splitright
 tnoremap <Esc> <C-\><C-n>
+let g:elm_format_fail_silently = 1 "Avoid annoying new window when elm-format fails.
