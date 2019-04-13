@@ -13,7 +13,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   * on ArchLinux:  
   sudo pacman -S neovim  
 
-###  Set up links for .vimrc in your Home folder:
+###  Set up a link for .vimrc in your Home folder:
 cd  
 ln my-vimrc/.vimrc  
 
