@@ -107,3 +107,4 @@ set splitright
 tnoremap <Esc> <C-\><C-n>
 let g:elm_format_fail_silently = 1 "Avoid annoying new window when elm-format fails.
 set clipboard+=unnamedplus "Use system clipboard without +register.
+set nonumber "No linenumbers
