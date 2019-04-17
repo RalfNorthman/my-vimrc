@@ -21,9 +21,6 @@ ln my-vimrc/.vimrc
 ln -s ~/.vim ~/.config/nvim  
 ln -s ~/.vimrc ~/.config/nvim/init.vim  
 
-###  Add this line to your ~/.profile to swap escape and caps lock keys permanently:
-setxkbmap -option caps:swapescape
-
 ### On Antergos MATE you need xclip for using system clipboard with neovim:
 sudo pacman -S xclip
 
