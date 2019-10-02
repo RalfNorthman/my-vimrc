@@ -199,4 +199,7 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
-
+"nvr takes care of nested nvim calls
+if has('nvim')
+  let $GIT_EDITOR = 'nvr -cc split --remote-wait'
+endif
