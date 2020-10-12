@@ -9,6 +9,8 @@ Plug 'xolox/vim-misc'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'andys8/vim-elm-syntax'
 Plug 'elmcast/elm-vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
@@ -36,6 +38,8 @@ set nrformats=
 vmap <Space> <Plug>RDSendSelection
 nmap <Space> <Plug>RDSendLine
 let R_term = "mate-terminal"
+let g:loaded_clipboard_provider = "xsel"
+let g:vim_markdown_folding_disabled = 1
 
 " Tab specific option
 set tabstop=8                   "A tab is 8 spaces
@@ -45,8 +49,12 @@ set shiftwidth=2                "An indent is 2 spaces
 set shiftround                  "Round indent to nearest shiftwidth multiple
 let g:mix_format_on_save = 1    "Format Elixir code on write.
 let g:rustfmt_autosave = 1      "Format Rust code on write.
-let g:elm_format_autosave = 1   "Format Elm code on wriete.
+let g:elm_format_autosave = 1   "Format Elm code on write.
 set guicursor=
+
+" Markdown style for markdown-preview.nvim plugin
+let g:mkdp_markdown_css = '/home/ralf/Documents/Översättning/fell.css'
+let g:mkdp_highlight_css = '/home/ralf/Documents/Översättning/fell.css'
 
 " Window navigation
 tnoremap <A-h> <C-\><C-N><C-w>h
@@ -68,6 +76,14 @@ tnoremap <Esc> <C-\><C-n>
 let g:elm_format_fail_silently = 1 "Avoid annoying new window when elm-format fails.
 set clipboard+=unnamedplus "Use system clipboard without +register.
 set nonumber "No linenumbers
+
+"Sort lines by visible length
+function! SortLines() range
+    execute a:firstline . "," . a:lastline . 's/^\(.*\)$/\=strdisplaywidth( submatch(0) ) . " " . submatch(0)/'
+    execute a:firstline . "," . a:lastline . 'sort n'
+    execute a:firstline . "," . a:lastline . 's/^\d\+\s//'
+endfunction
+
 
 " ---- Default coc.nvim bindings ----
 
@@ -164,6 +180,7 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 xmap if <Plug>(coc-funcobj-i)
 xmap af <Plug>(coc-funcobj-a)
 omap if <Plug>(coc-funcobj-i)
+
 omap af <Plug>(coc-funcobj-a)
 
 " Use <C-d> for select selections ranges, needs server support, like: coc-tsserver, coc-python

@@ -1,0 +1,16 @@
+{
+  "languageserver": {
+    "elmLS": {
+      "command": "elm-language-server",
+      "filetypes": ["elm"],
+      "rootPatterns": ["elm.json"],
+      "initializationOptions": {
+        "elmAnalyseTrigger": "change"
+      }
+    }
+  },
+  // If you use neovim you can enable codelenses with this
+  "codeLens.enable": false,
+  "cSpellExt.enableDictionaries": ["swedish"],
+  "cSpell.language": "en,sv"
+}
