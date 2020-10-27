@@ -14,7 +14,7 @@ https://github.com/junegunn/vim-plug#neovim
 
 ##  Start neovim and install plugins with: 
 
-:PluginInstall
+:PlugInstall
 
 ## Install coc-rust-analyzer with:
 
