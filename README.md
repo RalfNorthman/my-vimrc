@@ -1,28 +1,22 @@
-# Vim Setup
+# NeoVim Setup
 
-###  Fetch vundle repo:
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+## Install neovim
 
-###  Install neovim 
+https://github.com/neovim/neovim/wiki/Installing-Neovim#appimage-universal-linux-package
 
-  * on Debian:  
-  sudo add-apt-repository ppa:neovim-ppa/stable  
-  sudo apt-get update  
-  sudo apt-get install neovim  
+## Copy vim.init
 
-  * on ArchLinux:  
-  sudo pacman -S neovim  
+Copy vim.init from this repo to ~/.config/nvim
 
-###  Set up a link for .vimrc in your Home folder:
-cd  
-ln my-vimrc/.vimrc  
+## Install vim-plug
 
-###  Set up sympolic links for the nvim files:
-ln -s ~/.vim ~/.config/nvim  
-ln -s ~/.vimrc ~/.config/nvim/init.vim  
+https://github.com/junegunn/vim-plug#neovim
 
-### On Antergos MATE you need xclip for using system clipboard with neovim:
-sudo pacman -S xclip
+##  Start neovim and install plugins with: 
 
-###  Start neovim and install plugins: 
 :PluginInstall
+
+## Install coc-rust-analyzer with:
+
+:CocInstall coc-rust-analyzer
+https://rust-analyzer.github.io/manual.html#coc-rust-analyzer
