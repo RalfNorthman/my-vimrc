@@ -4,9 +4,9 @@
 
 https://github.com/neovim/neovim/wiki/Installing-Neovim#appimage-universal-linux-package
 
-## Copy vim.init
+## Copy init.vim
 
-Copy vim.init from this repo to ~/.config/nvim
+Copy init.vim from this repo to ~/.config/nvim
 
 ## Install vim-plug
 
